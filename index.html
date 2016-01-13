@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/styles.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>Political Self Test</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Which Party Are You???</h1>
+    <h4>To reveal your Political Party, we need to know a little bit about you!</h4>
+    <form id="party">
+      <label for="age">Age</label>
+      <input id="age" type="text">
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="quest1">Are you a Storm Trooper?</label>
+      <select id="quest1">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <button class="btn btn-warning" type="submit">Find Out Now</button>
+    </form>
+
+    <div id="result">
+      <p>
+        You belong to the <span id="answer"></span> party!
+      </p>
+    </div>
+
+    </div> <!-- END OF CONTAINER -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/scripts.js"></script>
+  </body>
+</html>
